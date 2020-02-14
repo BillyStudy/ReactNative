@@ -16,6 +16,18 @@ const global = {
             textAlign: 'center',
             fontSize: 18,
             color: '#333'
+        },
+
+        userContainer:{
+            paddingVertical:20,
+            paddingHorizontal: 30,
+            elevation:2,
+            backgroundColor: 'snow',
+            marginVertical: 5,
+            marginHorizontal: 10
+        },
+        userImage:{
+            width: 50
         }
     
 }
