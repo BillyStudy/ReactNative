@@ -22,13 +22,26 @@ const global = {
             paddingVertical:20,
             paddingHorizontal: 30,
             elevation:2,
-            backgroundColor: 'snow',
+            backgroundColor: '#fafafa',
             marginVertical: 5,
             marginHorizontal: 10
         },
-        userImage:{
-            width: 50
-        }
+        userProfile:{
+            //backgroundColor: 'cyan',
+            paddingVertical: 40,
+            paddingHorizontal: 50,
+            alignItens: 'center'
+            
+        },
+        avatarUser:{
+            width: 300, 
+            height: 300,
+            borderRadius:1000,
+            alignSelf: 'center',
+            elevation:5,
+            backgroundColor: 'white'
+        },
+
     
 }
 
