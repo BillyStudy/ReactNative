@@ -46,18 +46,18 @@ export default class Home extends Component{
 
     render(){
         return(
-            <SafeAreaView>
-            <Header title="Home" leftIcon="home" rightIcon="user" leftAction={this.leftAction} rightAction={this.rightAction}/>
-            <FlatList data={this.state.users} showsVerticalScrollIndicator={true} onEndReached={this.loadMore} onEndReachedThreshold={0.1} renderItem={({item}) => (
-                
+            <SafeAreaView style={global.safe}>
+            <Header title="Github" leftIcon="home" rightIcon="search1" leftAction={this.leftAction}/>
+            <FlatList data={this.state.users} showsVerticalScrollIndicator={true} onEndReached={this.loadMore} onEndReachedThreshold={0.3} renderItem={({item}) => (
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('user', {user: item})}>
                     <View style={global.userContainer}>
-                       <TouchableOpacity onPress={() => this.props.navigation.navigate('user', {user: item})}>
-
-                            <View style={{flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', width: '80%'}}>
-                            <Text style={global.userName}>{item.login}</Text>
-                            </View></TouchableOpacity>
+                       
+                            <Image source={{uri: item.avatar_url}} style={global.userTumb}/>
+                            <View style={global.userInfo}>
+                                <Text style={[global.userName]}>{item.login}</Text>
+                            </View>
                    
-                    </View>
+                    </View></TouchableOpacity>
                     )}  />
             </SafeAreaView>
         );

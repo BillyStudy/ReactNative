@@ -3,11 +3,15 @@ const global = {
         header:{
             padding: 20,
             elevation:5,
-            backgroundColor: '#fafafa',
+            backgroundColor: '#222',
             flexDirection: 'row',
             justifyContent: 'space-between',
             elevation: 5,
             alignItens: 'center',
+        },
+        safe:{
+            backgroundColor: '#444', 
+            flex: 1
         },
 
         headerTitle:{
@@ -15,31 +19,44 @@ const global = {
             fontFamily: 'Poppins',
             textAlign: 'center',
             fontSize: 18,
-            color: '#333'
+            color: '#fafafa'
         },
 
         userContainer:{
-            paddingVertical:20,
-            paddingHorizontal: 30,
-            elevation:2,
-            backgroundColor: '#fafafa',
-            marginVertical: 5,
-            marginHorizontal: 10
+            paddingVertical:10,
+            paddingHorizontal: 20,
+            elevation:15,
+            backgroundColor: '#efefef',
+            marginVertical: 6,
+            marginHorizontal: 10,
+            borderRadius:5,
+            flexDirection: 'row',
+            borderWidth: 3, borderColor: 'black'
         },
-        userProfile:{
-            //backgroundColor: 'cyan',
-            paddingVertical: 40,
-            paddingHorizontal: 50,
-            alignItens: 'center'
+        
+        userTumb:{
+            width: 40,
+            height:40,
+            borderRadius:360,
+            marginRight: 20
+        },
+        userName:{
+            fontWeight: 'bold',
+             textTransform: 'uppercase',
+             fontFamily: 'Poppins'
+        },
+
+        infoContainer:{
+            backgroundColor: '#efefef',
+            padding: 5,
+            marginVertical: 10,
+            borderRadius: 5,
+            elevation: 2
+           
+        },
+        userInfo:{
+            flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center' ,
             
-        },
-        avatarUser:{
-            width: 300, 
-            height: 300,
-            borderRadius:1000,
-            alignSelf: 'center',
-            elevation:5,
-            backgroundColor: 'white'
         },
 
     
